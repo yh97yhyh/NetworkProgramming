@@ -1,0 +1,31 @@
+C:\javac *.java
+
+C:\start rmiregistry
+
+---------------<SERVER>-----------------
+C:\rmic RMIChatServerImpl
+
+C:\java RMIChatServerImpl localhost 8080
+
+RMI Chat Server is ready
+
+
+---------------<CLIENT>-----------------
+C:\rmic RMIChatClientApp
+
+C:\java RMIChatClientApp localhost 8080
+
+before
+after
+
+---------------<동작 방법>---------------
+
+1. 서버를 실행시킨다.
+
+2. 클라이언트를 실행시킨다.(2개 이상)
+2.1 클라이언트 실행창에서 아이디, 패스워드, 서버이름(localhost), 포트번호(8080)를 입력한다.
+
+3. 서버이름, 포트번호가 같으면 
+채팅방에서 채팅이 이루어진다.
+
+4. 포트번호가 다른 경우, 서버에서 안내메세지가 출력된다.
